@@ -94,23 +94,31 @@
     #2\\ %
     \textbf{{Modules}} #3
 }
+\newcommand*{\mschool}[2]
+{%
+    \subsection{#1} %
+    #2\\ %
+}
 
-\newcommand*{\titletext}[7]
+\newcommand*{\titletext}[8]
 {%
     \begin{multicols}{2}
     {\ralewayextra\bfseries\fontsize{50}{50}\selectfont \hspace{13pt} #1}\vspace{-12pt}\\
     {\ralewaythin\fontsize{55}{55}\selectfont #2}
     
     {\raleway\small  \hspace{70pt}#3}
+    
+    
     \columnbreak
     
     \begin{flushright}
-    \vspace*{-0.1cm}    
-    {\ralewayextra Email} \textbf{\href{mailto:#4}{#4}}\\
-    {\ralewayextra Phone} \textbf{#5}\\
-    {\ralewayextra Personal Email} \textbf{\href{mailto:#6}{#6}}\\
-    \ifthenelse{\equal{#7}{}}{}{{\ralewayextra } \textbf{#7}}%
-
+    \vspace*{-0.6cm}
+    {\ralewayextra \faMapMarker\enspace \textbf{#4}} \\
+    {\ralewayextra Email} \textbf{\href{mailto:#4}{#5}}\\
+    {\ralewayextra Phone} \textbf{#6}\\
+    {\ralewayextra Personal Email} \textbf{\href{mailto:#6}{#7}}\\
+    \ifthenelse{\equal{#8}{}}{}{{\ralewayextra } \textbf{#8}}%
+    
     \end{flushright}
     \end{multicols}
     \vspace{-1cm}

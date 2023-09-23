@@ -1,42 +1,58 @@
 \documentclass{my_cv}
 \usepackage[skins]{tcolorbox}
+\usepackage{titlesec}
+
+% \titleformat{\subsection}
+%   {\normalfont\large\bfseries}{}{1em}{}
+\titlespacing*{\subsection}
+  {0pt}{\baselineskip}{0.5\baselineskip}
 
 \begin{document}
 \begin{multicols}{2}[
     \titletext{NIU}%
         {Xuezhi}%
         {Student in Mechatronics}%
+        {Stockholm, Sweden}%
         {xuezhin@kth.se}%
         {+46 0764334132}%
         {n7729697@gmail.com}%
-        {\faGithub \href{https://github.com/n7729697}{n7729697}}% {Teknikringen 70A, Stockholm, Sweden}%
+        {\faGithub \href{https://github.com/n7729697}{n7729697}}%
 ]
 \end{multicols}
 
 \section{\faFileText}{SUMMARY}
-My strong suits are ability to reach a targeted goal, skilled in problem solving and troubleshooting, with strong Pedagogic skills, talented and determined individual who accomplishes results. Good oral and written communication skills.
+Mechatronics grad with extensive experience in complex system design. Skilled in C/C++, Matlab, Python, SolidWorks, AutoCAD, ROS. Fluent in English and Chinese. Passionate about tech innovation.
 
 \begin{multicols}{2}
 \section{\faPencil}{EXPERIENCE}
 
-\work{Electronically vacuum regulated shut-off valve for milking system / Mar 2022 - Present}%
-    {KTH Royal Institute of Technology cooperated with DeLaval Holdings AB}%
-    {Designing an alternative shut-off valve that is electronically regulated by sensors developed in the milking systems.} % Conducting research on the related fields and doing experiments on self-designed prototypes, analyzing results and discussing the findings}% 
-\work{Autonomous drone with monocular camera / Jan 2022 - May 2022}%
+\work{Optimal Gait Control of Soft Quadruped Robot by Model-based Reinforcement Learning / Jan 2023 - Present}%
     {KTH Royal Institute of Technology}%
-    {Construct a drone system on ROS to search autonomously in a known environment based on Crazyflie 2.0. In addition to implementing the software for detecting, identifying and positioning the intruders, such as traffic signs}%
-\work{Bubble energy liquid-based electricity generator / Sep 2020 - Jun 2021}%
+    {Developed innovative software architecture for a novel soft quadruped robot, optimizing gait patterns through model-based reinforcement learning and collaboration across disciplines.}
+\work{Electronically Regulated shut-off Valve for Milking System \href{https://www.kth.se/social/files/63c57e0f3a9f6ce7c9153234/hk22-finalreport-delaval.pdf}{\textit{Report here}}/ Mar 2022 - Jan 2023}%
+    {KTH Royal Institute of Technology cooperated with DeLaval Holdings AB}%
+    {Led team in designing electronic vacuum control valve, integrating Kalman filter for enhanced reliability and compliance with industry standards.}
+\work{Design and Fabrication of MEMS Actuator / Oct 2022 - Jan 2023}%
+    {KTH Royal Institute of Technology}%
+    {Led team in designing and fabricating optical in-plane switch, employing COMSOL simulations and microfabrication techniques for optimized performance.}%
+\work{Monocular Autonomous Drone Systems / Jan 2022 - May 2022}%
+    {KTH Royal Institute of Technology}%
+    {Led team developing autonomous drone, implementing control algorithms for ROS-based localization, perception, and path planning.}%
+% \work{SLAM for Unmanned Vehicle / Jan 2022 - May 2022}%
+%     {KTH Royal Institute of Technology}%
+%     {Led dynamic team in creating SLAM system for Turtlebot3-based unmanned vehicle, integrating sensor data fusion and designing comprehensive algorithms.}%
+\work{Liquid-based Bubble-Driven TENG Generator / Sep 2020 - Jun 2021}%
     {City University of Hong Kong}%
-    {Exploring effective energy harvesting method utilizing triboelectric effect for air bubbles, proposing and designing prototype for widely used unit. Conducting experiments on self-designed stations, analyzing results and discussing the findings.}%
-\work{Wind turbine blade design and prototyping / Jan 2021 - May 2021}%
-    {City University of Hong Kong}%
-    {Design and manufacture the wind turbine blade for a competition in class and won 2nd place, the prototypes were manufactured based on 3D printing}%
-\work{Automated guided vehicle navigation / Jan 2021 - May 2021}%
-    {City University of Hong Kong}%
-    {Implement the program for a AGV to navigate on the printed desh line, the controller were written by \texttt{C\#} and the embedded microcontroller is LPC1343}%
-\work{Synthesis and manufacture of flexible batteries / Apr 2019 - Jan 2020}%
-    {City University of Hong Kong}%
-    {Take in charge of literature review, conducting experiments, collect and analyze experiment results and business information, preparation for prototype, entry documents, videos, photos, etc. Research on fabrication of seed-assisted hydroxide nanomaterials, flexible electrodes and industrial coating technology.}%
+    {Conducted foundational research on liquid-based TENGs, validated and characterized generator's performance, advancing sustainable energy solutions.}%
+% \work{Wind turbine blade design and prototyping / Jan 2021 - May 2021}%
+%     {City University of Hong Kong}%
+%     {Design and manufacture the wind turbine blade for a competition in class and won 2nd place, the prototypes were manufactured based on 3D printing}%
+% \work{Automated guided vehicle navigation / Jan 2021 - May 2021}%
+    % {City University of Hong Kong}%
+    % {Implement the program for a AGV to navigate on the printed desh line, the controller were written by \texttt{C\#} and the embedded microcontroller is LPC1343}%
+% \work{Synthesis and Manufacture of Flexible Batteries / Apr 2019 - Jan 2020}%
+%     {City University of Hong Kong}%
+%     {Developed metal hydroxides for flexible batteries, applied new synthesis method and designed assembly module, collaborated with industry for market implementation.}%
 % \work{Utilizing Multiple Sensors to Monitor and Predict Bone Fracture Healing / Sep 2018 - Jan 2019}%
 %     {City University of Hong Kong}%
 %     {Take in charge of literature review, preparation of prototype, conducting experiments on the prepared prototypes, collect and analyze experiment results etc. Research on multiple sensors cooperation in vivo.}%
@@ -55,9 +71,10 @@ My strong suits are ability to reach a targeted goal, skilled in problem solving
 
 \section{\faGraduationCap}{EDUCATION}
 
-\school{KTH Royal Institute of Technology - present} %
-{Master of Science in Mechatronics Engineering} %
-{\textit{Control principles, C programming, Electronics and electric, Embedded systems, Robotics, Biomechanics and Neuronics etc.}}
+\mschool{KTH Royal Institute of Technology - present} %
+{Master of Science in Mechatronics Engineering}
+\textbf{Master thesis}: Optimal Gait Control of Soft Quadruped Robot by Model-based Reinforcement Learning \\
+\textbf{Expected Graduation}: Jan. 2024
     
 \school{City University of Hong Kong - 2021} %
 {Bachelor of Engineering in Mechanical Engineering} %
@@ -84,24 +101,23 @@ My strong suits are ability to reach a targeted goal, skilled in problem solving
 
 \noindent\textbf{Tools:} MS Office, Ubuntu, \LaTeX, Adobe Photoshop, Adobe Illustrator, Adobe Premiere Pro, GIMP, SolidWorks, AutoCAD, ROS, MATLAB, Endnote, LS-DYNA, ANSYS, Simplify3D, OriginLab, SPSS, 3D printing, laser cutting, lathe and milling machine, Arduino, STM32 etc.
 
+\section{\faStar}{AWARDS / ACHIEVEMENT}
+\begin{itemize}[noitemsep]
+    \item CN patent grants (pending), "Novel high-load multi-component metal hydroxide with its synthesis method and application".
+    \item CN patent grants (pending), "A flexible battery assembly die and its structural design".
+    \item Talent Development Scholarship, Hong Kong SAR Government Scholarship
+    \item Second prize in National Finals of the 2019 “Challenge Cup” 
+    \item Silver Prize in the National Finals of 2019 “Internet +”
+    %\item etc.
+\end{itemize}
+
 \section{\faSoccerBallO}{ACTIVITIES / INTERESTS}
 Proactive about learning diverse things and happy to discuss those. Curious about how things were featured and how they brought us today. 
 \begin{itemize}[noitemsep]
     \item Favorite physical activities would be \textbf{soccer} and \textbf{cycling}. Professor Edmond Ko Cup Soccer 2019 Championship representing Hall 2 of City University of Hong Kong. High school Soccer Match 2016 Championship.
     \item Favorite activities while free would be \textbf{reading} and \textbf{cooking}. Read more than 300 novels of different categories, e.g. science fiction, history, xuanhuan, fantasy etc.
 \end{itemize}
-\columnbreak
-
-\section{\faStar}{AWARDS / ACHIEVEMENT}
-\begin{itemize}[noitemsep]
-    \item CN patent grants (pending), "Novel high-load multi-component metal hydroxide with its synthesis method and application".
-    \item CN patent grants (pending), "A flexible battery
-assembly die and its structural design".
-    \item Talent Development Scholarship, Hong Kong SAR Government Scholarship
-    \item Second prize in National Finals of the “Challenge Cup” Competition
-    \item Silver Prize in the National Finals of “Internet +” Competition
-    %\item etc.
-\end{itemize}
-
+% \columnbreak
 \end{multicols}
+
 \end{document}
